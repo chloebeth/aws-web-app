@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box
+}
+
+a {
+  color: #410429
+}
+
+#switch {
+  color: #fff;
+  background-color: #3f3c3c !important
+}
+
+.btn {
+  color: #fff;
+  background-color: #410429 !important
+}

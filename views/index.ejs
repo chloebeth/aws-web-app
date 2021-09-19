@@ -1,0 +1,38 @@
+<!doctype html>
+   <head>
+      <title> Login </title>
+      <% include partials/head %>
+   </head>
+   <body>
+      <% include partials/nav %>
+      <form method="post" action="/account/login" autocomplete="off">
+         <div class="row mt-5">
+            <div class="col-md-4 m-auto">
+                  <div class="controls">
+                     <div class="row">
+                        <div class="col-md-12">
+                           Enter Username:
+                           <div class="form-group">
+                              <input name="name" class="form-control">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           Enter Password:
+                           <div class="form-group">
+                              <input type="password" name="password" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <input type="submit" class="btn btn-send" value="Login">
+                           <a class="btn" id="switch" href="/account/register"> Register </a>
+                           <br><br>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>

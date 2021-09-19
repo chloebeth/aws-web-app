@@ -1,0 +1,38 @@
+<!doctype html>
+   <head>
+      <title> Register </title>
+      <% include partials/head %>
+   </head>
+   <body>
+    <% include partials/nav %>
+        <div class="row mt-4">
+            <div class="col-md-4 m-auto">
+                    <form action="/account/register" method="post" autocomplete="off">
+                        Enter Firstname:
+                        <div class="form-group">
+                            <input name="first" class="form-control" value="<%= typeof first != 'undefined' ? first : '' %>"/>
+                        </div>
+                        Enter Lastname:
+                        <div class="form-group">
+                            <input name="last" class="form-control" value="<%= typeof last != 'undefined' ? last : '' %>"/>
+                        </div>
+                        Enter Username:
+                        <div class="form-group">
+                            <input name="name" class="form-control" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+                        </div>
+                        Enter Email:
+                        <div class="form-group">
+                            <input name="email" class="form-control" value="<%= typeof email != 'undefined' ? email : '' %>"/>
+                        </div>
+                        Enter Password:
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" value="<%= typeof password != 'undefined' ? password : '' %>"/>
+                        </div>
+                        <button type="submit" class="btn"> Register </button>
+                        <a class="btn" id="switch" href="/"> Login </a>
+                        <br><br>
+                    </form>
+            </div>
+        </div>
+   </body>
+</html>

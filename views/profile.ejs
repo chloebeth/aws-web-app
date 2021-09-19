@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+    <title> Dashboard </title>
+    <% include partials/head %>
+</head>
+<body>
+<% include partials/nav %>
+    <div class="row mt-4">
+        <div class="col-md-6 m-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="first"> Firstname: </label>
+                        <%- user.first %>
+                    </div>
+                    <div class="form-group">
+                        <label for="last"> Lastname: </label>
+                        <%- user.last %>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Email: </label>
+                        <%- user.email %>
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
